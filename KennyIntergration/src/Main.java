@@ -44,15 +44,15 @@ public class Main {
     }
 }
 		
-// any time you go from numbers to strings clear out buffer  
-//Variable- anything that can vary, and a variable must have a unique name. asigned with an = operator 
-//Scope- determins the accesibility of these variables.
+	// any time you go from numbers to strings clear out buffer  
+	//Variable- anything that can vary, and a variable must have a unique name. asigned with an = operator 
+	//Scope- determins the accesibility of these variables.
 
-// this is a clock
+	// this is a clock
 class Clock {
 	//fields
- private  int  angleOfHourHand;
- private  int  angleOfMinuteHand;
+  private  int  angleOfHourHand;
+  private  int  angleOfMinuteHand;
 
 
 	// methods
