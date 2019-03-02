@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Random;
+
 
 // Kevin Kenny
 public class Main {
@@ -31,10 +33,14 @@ public class Main {
     System.out.println("The result of + with doubles is " + (double1 + double2));
     /* Concatenate and print the String variables on a new line. */
     System.out.println("The result of + with Strings is " + (string1 + string2));
+    
     dataType();
     ifStatements();
-  }
+    myCard();
+   launchPlan();
 
+}
+  
   public static void dataType() {
     Scanner scan = new Scanner(System.in);
     int i = scan.nextInt();
@@ -49,6 +55,7 @@ public class Main {
     System.out.println("Double: " + d);
     System.out.println("Int: " + i);
   }
+  
 
   // any time you go from numbers to strings clear out buffer
 
@@ -81,7 +88,7 @@ public class Main {
       }
     }
   }
-}
+
 
 
 
@@ -99,9 +106,40 @@ public class Main {
 
     public static void myCard() {
       Card myCard = new Card();
-      myCard.setSuite("Clubs");
-      System.out.println(myCard.getSuite());
       myCard.draw();
-      System.out.println(myCard.getSuite());
+      System.out.println(myCard.getSuit());
+      System.out.println(myCard.getSuit());
       }
+ 
+        
+      public static void launchPlan() {
+        System.out.println("Countdown to Launch");
+        
+        for(int t = 10; t >= 0; t--) {
+          System.out.println(t);
+        }
+        System.out.println("Take Off");
+        }
+      
+      public static void areaCalc() {
+        double length = 5.0;
+        double width = 2.5;
+        System.out.println(calculateArea(length, width));
+      }
+      
+      public static double calculateArea(double side1, double side2) {
+        double area;
+        area = side1 * side2;
+        return area;
+      }
+      
+      
     }
+    
+
+
+
+
+   
+
+        
