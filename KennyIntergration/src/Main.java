@@ -7,6 +7,7 @@ public class Main {
   // A program integrating skills learned in COP 2006 like print outputs, and using primitive data
   // types such as int,double, and string.
   // this is the driver class
+  // test change
   public static void main(String[] args) {
 
     Truck myCar = new Truck();
@@ -18,7 +19,7 @@ public class Main {
 
 
     System.out.println("Welcome to the intergration project of Kevin Kenny!");
-
+    System.out.println("This is a test for the comit to intergration  repository");
 
     int int1 = 2;
     double double1 = 2.0;
