@@ -1,9 +1,10 @@
 // Kevin Kenny
 
 /**
- * @author Kevin
- *This Truck class is used in my main.java file to get the 
+ * This Truck class is used in my main.java file to get the 
  *color and year of truck.
+ * @author Kevin
+ *
  */
 public class Truck {
 

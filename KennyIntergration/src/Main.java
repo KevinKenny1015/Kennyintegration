@@ -1,7 +1,9 @@
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Random;
+import java.util.Scanner;
+
+
 
 // Intigration Project
 // This is the header.
@@ -44,7 +46,7 @@ public class Main {
     /* Concatenate and print the String variables on a new line. */
     System.out.println("The result of + with Strings is " + (string1 + string2));
 
-    Scanner scan = new Scanner(System.in);
+    final Scanner scan = new Scanner(System.in);
     makeTruck();
     testHuman();
     runScore();
@@ -53,7 +55,7 @@ public class Main {
     golfScore();
     getMinValue();
     twoDArray();
-    aList();
+    showSportsList();
     exceptionCatch(scan);
     findIndex();
 
@@ -151,7 +153,7 @@ public class Main {
   // Test for commit and push
 
   /**
-   * Produce 2 random card suits
+   * Produce 2 random card suits.
    */
   public static void myCard() {
     Card myCard = new Card();
@@ -218,7 +220,8 @@ public class Main {
   }
 
   /**
-   * Input size of your pizza slice. It will output the bigger number between pi and the pizza size.
+   * Input size of your pizza slice. 
+   * It will output the bigger number between pi and the pizza size.
    * 
    * @param scan lokking for a user to input their number.
    */
@@ -323,9 +326,9 @@ public class Main {
   }
 
   /**
-   * This code allows this to print out whitespace. Also be placed where I want it.
+   * This code allows this to print out whitespace. Also placed where I want it.
    * 
-   * @param sc
+   * @param sc numbers of 3 digits with 15 white spaces
    */
   public static void stringFormat(Scanner sc) {
     System.out.println("================================");
@@ -359,7 +362,7 @@ public class Main {
   }
 
   /**
-   * This code will output x as long as it is less then 10
+   * This code will output x as long as it is less then 10.
    */
   public static void printCount() {
     int x = 0;
@@ -377,8 +380,8 @@ public class Main {
     for (int i = 1; i <= 10; ++i) {
       if (i > 4 && i < 9) {
         continue; /*
-                   * continue statement skips the statements after the continue statement and keeps
-                   * looping.
+                   * continue statement skips the statements after the 
+                   * continue statement and keeps looping.
                    */
       }
       System.out.println(i);
@@ -395,8 +398,8 @@ public class Main {
       System.out.println("var: " + var);
       if (var == 99) {
         break; /*
-                * the loop is ended right away and the program resumes at the following statement in
-                * the loop
+                * the loop is ended right away and the program resumes 
+                * at the following statement in the loop.
                 */
       }
     }
@@ -404,27 +407,27 @@ public class Main {
   }
 
   /*
-   * the operator precedence works just like pemdas. multiplication and divide have a higher
-   * precedence than add and subtract. Precedence rules can be overridden by explicit parentheses.
+   * the operator precedence works just like pemdas. 
+   * Multiplication and divide have a higher precedence than add and subtract.
+   *  Precedence rules can be overridden by explicit parentheses.
    */
 
   // Car myCar = new Car();
 
   // Cat garfield = new Cat();garfield.setName("Garfield");
-  // Cat tom = new Cat("Tom");tom.setName("Tommy");System.out.println(garfield.getName());
+  // Cat tom = new Cat("Tom");tom.setName("Tommy");
+  // System.out.println(garfield.getName());
 
-  // what is a constructor - A method that gets called automaticly when objects created
-  /*
-   * public Car() { header for constructor System.out.println("I am the constructor!");
-   *** 
-   * Make Anthony = new Male(); anthony.setAge(17);
+  /* what is a constructor - A method that gets called automaticly 
+   * when objects created. 
    * 
    * 
-   * 
-   * overloading-different signerature(number,data type) over riding-having two or more methods with
-   * the same name in a base and in a derive class. polymorphism- ("is a")one thing is allowed to be
-   * something else, a derived type can be stored in a container declared as the base type
-   * }inheriting-taking the properties a a subclass and allowing the superclass to take over
+   * overloading-different signerature(number,data type) over-riding having
+   * two or more methods with the same name in a base and in a derive class. 
+   * polymorphism- ("is a")one thing is allowed to be something else, 
+   * a derived type can be stored in a container declared as the base type
+   * inheriting-taking the properties a a subclass and allowing 
+   * the superclass to take over.
    */
   /**
    * This code totals the number of runs and outputs the sum.
@@ -468,8 +471,8 @@ public class Main {
   }
 
   /**
-   * This code keeps track of your golf score. It totals the numbers in the array and print the
-   * total score.
+   * This code keeps track of your golf score. 
+   * It totals the numbers in the array and print the total score.
    */
   public static void golfScore() {
     int[] anArray;// declares the array of integers
@@ -515,7 +518,7 @@ public class Main {
   /**
    *Outputs the string of arrays on order as below.
    */
-  public static void aList() {
+  public static void showSportsList() {
 
     // create a ArrayList String type
     ArrayList<String> gfg = new ArrayList<String>();
@@ -530,8 +533,8 @@ public class Main {
   }
 
   /**
-   * If you enter an int it will work but if not a friendly exception will pop up.
-   * 
+   * If you enter an int it will work but if not 
+   * a friendly exception will pop up. 
    * @param s an integer or something that will cause an exception.
    */
   public static void exceptionCatch(Scanner s) {
@@ -548,8 +551,8 @@ public class Main {
 
   // Function to find the index of an element in a primitive array in Java
   /**
-   * Sorts through the code finding the arrays i called for and will print the array list i want
-   * printed on screen.
+   * Sorts through the code finding the arrays i called for and will print
+   * the array list i want printed on screen.
    */
   public static void findIndex() {
     System.out.println("Type of cars I want to own!");
@@ -570,8 +573,8 @@ public class Main {
 
 
   /**
-   * This code will go through Truck.java and will use the getcolor and getyear to output the color
-   * of year.
+   * This code will go through Truck.java and will use the 
+   * getcolor and getyear to output the color of year.
    */
   public static void makeTruck() {
     Truck myTruck = new Truck();

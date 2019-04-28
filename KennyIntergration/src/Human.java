@@ -1,6 +1,7 @@
 
 /**
- * @author Kevin This ends up outputing the print statement Human Breathing.
+ * This ends up outputing the print statement Human Breathing.
+ * @author Kevin 
  */
 class Human {
   public void breath() {
@@ -10,13 +11,3 @@ class Human {
 }
 
 
-/**
- * @author Kevin This class is used for the testHuman call from this class for Student Studying.
- */
-class Student extends Human {
-  public void study() {
-    // class with Studying
-    System.out.println("Student Studying");
-
-  }
-}
