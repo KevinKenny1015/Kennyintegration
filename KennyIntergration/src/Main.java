@@ -5,10 +5,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-
 // Intigration Project
 // This is the header.
-/**The Main class contains my code hope you enjoy it.
+/**
+ * The Main class contains my code hope you enjoy it.
+ * 
  * @author Kevin
  *
  */
@@ -17,7 +18,6 @@ public class Main {
   // using primitive data types such as int,double, and string.
   // this is the driver class
   // test change
-
   // any time you go from numbers to strings clear out buffer
   // Variable- anything that can vary, and a variable must have a
   // unique name.asigned with an = operator
@@ -59,7 +59,6 @@ public class Main {
     showSportsList();
     exceptionCatch(scan);
     findIndex();
-
     countContinue();
     duckCount();
     printCount();
@@ -197,7 +196,7 @@ public class Main {
    * @return an integer value for the area.
    */
   public static double calculateArea(double side1, double side2) {
-    System.out.println("Show area");
+    System.out.println("Show the area of the rectangle: ");
     double area;
     area = side1 * side2;
     return area;// will output length*width
@@ -208,7 +207,7 @@ public class Main {
    */
   public static void randomNumgen() {
     // create random object
-    System.out.println("will output 6 random numbers (1-53)");
+    System.out.println("6 random numbers between (1-53) will print out:");
     Random randomGen = new Random();
     // will output a random number 1-53, 6 times. A number may be the same.
     System.out.println(randomGen.nextInt(53) + 1);
@@ -221,8 +220,7 @@ public class Main {
   }
 
   /**
-   * Input size of your pizza slice. 
-   * It will output the bigger number between pi and the pizza size.
+   * Input size of your pizza slice. It will output the bigger number between pi and the pizza size.
    * 
    * @param scan lokking for a user to input their number.
    */
@@ -257,13 +255,14 @@ public class Main {
     } else {
       grade = 'F';
     }
-    System.out.println("Grade = " + grade);
+    System.out.println("Your leter grade is: " + grade);
     System.out.println("================================");
   }
 
   /**
    * This code is a Case and Break set of code.
    */
+  // https://www.geeksforgeeks.org/switch-statement-in-java/
   public static void numberSwitch() {
     int num = 2;
     switch (num + 2) {
@@ -347,7 +346,7 @@ public class Main {
   }
 
   /**
-   *Basic Counter from 5 down.
+   * Basic Counter from 5 down.
    */
   public static void countDown() {
     int i = 5;
@@ -358,7 +357,7 @@ public class Main {
   }
 
   /**
-   *Counts the total number of ducks.
+   * Counts the total number of ducks.
    */
   public static void duckCount() {
     for (int i = 10; i > 1; i--) {
@@ -372,7 +371,7 @@ public class Main {
   public static void printCount() {
     int x = 0;
     do {
-      System.out.println(x);
+      System.out.println("The number is: " + x);
       x++;
     } while (x < 10);
   }
@@ -385,8 +384,8 @@ public class Main {
     for (int i = 1; i <= 10; ++i) {
       if (i > 4 && i < 9) {
         continue; /*
-                   * continue statement skips the statements after the 
-                   * continue statement and keeps looping.
+                   * continue statement skips the statements after the continue statement and keeps
+                   * looping.
                    */
       }
       System.out.println(i);
@@ -394,8 +393,7 @@ public class Main {
   }
 
   /**
-   * Code will go through the number from 100 down til it hits 99 then it go
-   * to the break.
+   * Code will go through the number from 100 down til it hits 99 then it go to the break.
    */
   public static void numberBreak() {
     int var;
@@ -403,8 +401,8 @@ public class Main {
       System.out.println("var: " + var);
       if (var == 99) {
         break; /*
-                * the loop is ended right away and the program resumes 
-                * at the following statement in the loop.
+                * the loop is ended right away and the program resumes at the following statement in
+                * the loop.
                 */
       }
     }
@@ -412,27 +410,21 @@ public class Main {
   }
 
   /*
-   * the operator precedence works just like pemdas. 
-   * Multiplication and divide have a higher precedence than add and subtract.
-   *  Precedence rules can be overridden by explicit parentheses.
+   * the operator precedence works just like pemdas. Multiplication and divide have a higher
+   * precedence than add and subtract. Precedence rules can be overridden by explicit parentheses.
    */
 
   // Car myCar = new Car();
 
-  // Cat garfield = new Cat();garfield.setName("Garfield");
-  // Cat tom = new Cat("Tom");tom.setName("Tommy");
-  // System.out.println(garfield.getName());
 
-  /* what is a constructor - A method that gets called automaticly 
-   * when objects created. 
+  /*
+   * what is a constructor - A method that gets called automaticly when objects created.
    * 
    * 
-   * overloading-different signerature(number,data type) over-riding having
-   * two or more methods with the same name in a base and in a derive class. 
-   * polymorphism- ("is a")one thing is allowed to be something else, 
-   * a derived type can be stored in a container declared as the base type
-   * inheriting-taking the properties a a subclass and allowing 
-   * the superclass to take over.
+   * overloading-different signerature(number,data type) over-riding having two or more methods with
+   * the same name in a base and in a derive class. polymorphism- ("is a")one thing is allowed to be
+   * something else, a derived type can be stored in a container declared as the base type
+   * inheriting-taking the properties a a subclass and allowing the superclass to take over.
    */
   /**
    * This code totals the number of runs and outputs the sum.
@@ -458,8 +450,7 @@ public class Main {
         minValue = numbers[i];
       }
     }
-    System.out.println(minValue);// output min value
-
+    System.out.println("The min value is: " + minValue);// output min value
   }
 
 
@@ -476,9 +467,10 @@ public class Main {
   }
 
   /**
-   * This code keeps track of your golf score. 
-   * It totals the numbers in the array and print the total score.
+   * This code keeps track of your golf score. It totals the numbers in the array and print the
+   * total score.
    */
+  // https://www.javatpoint.com/array-in-java
   public static void golfScore() {
     int[] anArray;// declares the array of integers
     anArray = new int[10];// opens memory for 10 integers
@@ -507,7 +499,7 @@ public class Main {
   }
 
   /**
-   *Groups the arrays and prints them on the screen.
+   * Groups the arrays and prints them on the screen.
    */
   public static void twoDArray() {
     // 2D Array used here
@@ -521,7 +513,7 @@ public class Main {
   }
 
   /**
-   *Outputs the string of arrays on order as below.
+   * Outputs the string of arrays on order as below.
    */
   public static void showSportsList() {
 
@@ -538,10 +530,11 @@ public class Main {
   }
 
   /**
-   * If you enter an int it will work but if not 
-   * a friendly exception will pop up. 
+   * If you enter an int it will work but if not a friendly exception will pop up.
+   * 
    * @param s an integer or something that will cause an exception.
    */
+  // https://www.tutorialspoint.com/java/java_exceptions.htm
   public static void exceptionCatch(Scanner s) {
     try {
       System.out.print("Enter an integer: ");
@@ -556,8 +549,8 @@ public class Main {
 
   // Function to find the index of an element in a primitive array in Java
   /**
-   * Sorts through the code finding the arrays i called for and will print
-   * the array list i want printed on screen.
+   * Sorts through the code finding the arrays i called for and will print the array list i want
+   * printed on screen.
    */
   public static void findIndex() {
     System.out.println("Type of cars I want to own!");
@@ -578,8 +571,8 @@ public class Main {
 
 
   /**
-   * This code will go through Truck.java and will use the 
-   * getcolor and getyear to output the color of year.
+   * This code will go through Truck.java and will use the getcolor and getyear to output the color
+   * of year.
    */
   public static void makeTruck() {
     Truck myTruck = new Truck();
@@ -607,4 +600,3 @@ public class Main {
 
 }
 
-      
