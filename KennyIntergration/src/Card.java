@@ -12,6 +12,14 @@ public class Card {
   public void setSuit(String suitToBeSet) {
     suit = suitToBeSet;
   }
+  
+  public int getNumber() {
+    return number;
+  }
+
+  public void setNumber(int number) {
+    this.number = number;
+  }
 
   /**
    * Used to generate 2 random suits.
@@ -30,7 +38,7 @@ public class Card {
     } else {
       System.out.println("Broken try again");
     }
-    number = Math.abs(randomGen.nextInt() % 13) + 1;
+    setNumber(Math.abs(randomGen.nextInt() % 13) + 1);
 
   }
 
