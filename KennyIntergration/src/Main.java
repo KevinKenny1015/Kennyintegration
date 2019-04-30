@@ -41,11 +41,11 @@ public class Main {
     double double2 = 2.0;
     String string2 = "2";
     /* Print the sum of both integer variables on a new line. */
-    System.out.println("The result of + with ints is " + (int1 + int2));
+    System.out.println("The result of two ints is " + (int1 + int2));
     /* Print the sum of the double variables on a new line. */
-    System.out.println("The result of + with doubles is " + (double1 + double2));
+    System.out.println("The result of two doubles is " + (double1 + double2));
     /* Concatenate and print the String variables on a new line. */
-    System.out.println("The result of + with Strings is " + (string1 + string2));
+    System.out.println("The result of two Strings is " + (string1 + string2));
 
     final Scanner scan = new Scanner(System.in);
     makeTruck();
@@ -100,11 +100,6 @@ public class Main {
 
   // any time you go from numbers to strings clear out buffer
 
-  /*
-   * this is a clock class Clock { //fields private int angleOfHourHand; private int
-   * angleOfMinuteHand; // methods public void tellTime () {} }
-   */
-
   /**
    * This will output what size the numbers can fit in.
    * 
@@ -142,8 +137,8 @@ public class Main {
   }
 
   /*
-   * double num1 = 5; // this is a call, in the parenthesis is an argument double squared =
-   * 
+   * double num1 = 5; // this is a call, in the parenthesis is an argument
+   * double squared =.
    * 
    * public static double squareIt(double n1) { return n1 *n1;
    * 
@@ -159,7 +154,7 @@ public class Main {
     Card myCard = new Card();
     myCard.draw();
     System.out.println("2 randon card suits will print");
-    System.out.println(myCard.getSuit());
+    System.out.println(myCard.getSuit()); // Print randon card suit
     System.out.println(myCard.getSuit());
     System.out.println("================================");
   }
@@ -183,7 +178,7 @@ public class Main {
    */
   public static void areaCalc() {
     double length = 5.0;
-    double width = 2.5;
+    double width = 2.5; // The area will be calculated
     System.out.println(calculateArea(length, width));
     System.out.println("================================");
   }
@@ -220,8 +215,8 @@ public class Main {
   }
 
   /**
-   * Input size of your pizza slice. It will output the bigger number between pi and the pizza size.
-   * 
+   * Input size of your pizza slice. It will output the bigger number
+   * between pi and the pizza size.
    * @param scan lokking for a user to input their number.
    */
   public static void numberTeller(Scanner scan) {
@@ -240,7 +235,7 @@ public class Main {
    * @param scan Input for the grade from user.
    */
   public static void gradeScorer(Scanner scan) {
-    System.out.println("input test score");
+    System.out.println("input your test score");
     double testscore = scan.nextDouble();
     char grade;
 
@@ -255,7 +250,7 @@ public class Main {
     } else {
       grade = 'F';
     }
-    System.out.println("Your leter grade is: " + grade);
+    System.out.println("You got a letter grade of: " + grade);
     System.out.println("================================");
   }
 
@@ -361,7 +356,7 @@ public class Main {
    */
   public static void duckCount() {
     for (int i = 10; i > 1; i--) {
-      System.out.println("The total ducks are: " + i);
+      System.out.println("The total number of ducks are: " + i);
     }
   }
 
@@ -384,8 +379,8 @@ public class Main {
     for (int i = 1; i <= 10; ++i) {
       if (i > 4 && i < 9) {
         continue; /*
-                   * continue statement skips the statements after the continue statement and keeps
-                   * looping.
+                   * continue statement skips the statements after the continue
+                   *  statement and keeps looping.
                    */
       }
       System.out.println(i);
@@ -393,16 +388,17 @@ public class Main {
   }
 
   /**
-   * Code will go through the number from 100 down til it hits 99 then it go to the break.
+   * Code will go through the number from 100 down til it hits 99 
+   * then it go to the break.
    */
   public static void numberBreak() {
     int var;
     for (var = 100; var >= 10; var--) {
-      System.out.println("var: " + var);
+      System.out.println("the variable is: " + var);
       if (var == 99) {
         break; /*
-                * the loop is ended right away and the program resumes at the following statement in
-                * the loop.
+                * the loop is ended right away and the program resumes
+                * at the following statement in the loop.
                 */
       }
     }
@@ -410,21 +406,20 @@ public class Main {
   }
 
   /*
-   * the operator precedence works just like pemdas. Multiplication and divide have a higher
-   * precedence than add and subtract. Precedence rules can be overridden by explicit parentheses.
-   */
-
-  // Car myCar = new Car();
-
-
-  /*
-   * what is a constructor - A method that gets called automaticly when objects created.
-   * 
-   * 
-   * overloading-different signerature(number,data type) over-riding having two or more methods with
-   * the same name in a base and in a derive class. polymorphism- ("is a")one thing is allowed to be
-   * something else, a derived type can be stored in a container declared as the base type
-   * inheriting-taking the properties a a subclass and allowing the superclass to take over.
+   * the operator precedence works just like pemdas.
+   * Multiplication and divide have a higherprecedence than add and subtract.
+   * Precedence rules can be overridden by explicit parentheses.
+   
+   * what is a constructor - A method that gets called automaticly when
+   * objects created.
+    
+   * overloading-different signerature(number,data type) 
+   * over-riding having two or more methods with the same name in
+   * a base and in a derive class.
+   * polymorphism- ("is a")one thing is allowed to be something else, a 
+   * derived type can be stored in a container declared as the base type
+   * inheriting-taking the properties a a subclass and 
+   * allowing the superclass to take over.
    */
   /**
    * This code totals the number of runs and outputs the sum.
@@ -443,14 +438,14 @@ public class Main {
    * This will print the minimum value in the array.
    */
   public static void getMinValue() {
-    int[] numbers = {0, 1, 2, 3, 4, 5};
+    int[] numbers = {0, 1, 2, 3, 4, 5};// numbers in array
     int minValue = numbers[0];
     for (int i = 1; i < numbers.length; i++) {
       if (numbers[i] < minValue) {
         minValue = numbers[i];
       }
     }
-    System.out.println("The min value is: " + minValue);// output min value
+    System.out.println("The minimum value is: " + minValue);// output min value
   }
 
 
@@ -459,7 +454,7 @@ public class Main {
    */
   public static void arLoop() {
 
-    char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+    char[] vowels = {'a', 'e', 'i', 'o', 'u'};// array
 
     for (int i = 0; i < vowels.length; ++i) {
       System.out.println(vowels[i]);
@@ -467,8 +462,8 @@ public class Main {
   }
 
   /**
-   * This code keeps track of your golf score. It totals the numbers in the array and print the
-   * total score.
+   * This code keeps track of your golf score. It totals the numbers
+   * in the array and print the total score.
    */
   // https://www.javatpoint.com/array-in-java
   public static void golfScore() {
@@ -530,12 +525,14 @@ public class Main {
   }
 
   /**
-   * If you enter an int it will work but if not a friendly exception will pop up.
+   * If you enter an int it will work but if not a friendly 
+   * exception will pop up.
    * 
    * @param s an integer or something that will cause an exception.
    */
   // https://www.tutorialspoint.com/java/java_exceptions.htm
   public static void exceptionCatch(Scanner s) {
+    // enter not an int 
     try {
       System.out.print("Enter an integer: ");
       int num = s.nextInt();
@@ -549,8 +546,8 @@ public class Main {
 
   // Function to find the index of an element in a primitive array in Java
   /**
-   * Sorts through the code finding the arrays i called for and will print the array list i want
-   * printed on screen.
+   * Sorts through the code finding the arrays i called for and will 
+   * print the array list i want printed on screen.
    */
   public static void findIndex() {
     System.out.println("Type of cars I want to own!");
@@ -571,8 +568,8 @@ public class Main {
 
 
   /**
-   * This code will go through Truck.java and will use the getcolor and getyear to output the color
-   * of year.
+   * This code will go through Truck.java and will use the getcolor and
+   *  getyear to output the color of year.
    */
   public static void makeTruck() {
     Truck myTruck = new Truck();
